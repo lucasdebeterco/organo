@@ -1,7 +1,9 @@
+import { Banner } from "./components/Banner/Banner";
+
 function App() {
   return (
     <h1>
-      Olá mundo.
+      <Banner />
     </h1>
   );
 }
