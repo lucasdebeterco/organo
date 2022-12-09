@@ -1,6 +1,5 @@
-# Organo
+# Organo - Prof. Vinny Neves (Alura)
 Pessoas e times organizados em um só lugar
-
 
 O Organo é uma aplicação que vai permitir que a configuremos e cadastremos a organização da nossa empresa. A ideia é conseguirmos adicionar dinamicamente pessoas a esses times.
 
