@@ -1,6 +1,7 @@
 import { TextField } from '../TextFiled/TextField'
 import './form.css'
 import {Dropdown} from "../Dropdown/Dropdown";
+import { Button } from '../Button/Button';
 
 export function Form () {
     const times = [
@@ -12,14 +13,24 @@ export function Form () {
         'Mobile',
         'Inovação e Gestão'
     ]
+
+    const onSave = (event) => {
+        event.preventDefault()
+
+        console.log("Form foi enviado")
+    }
+
     return (
         <section className='form'>
-            <form>
+            <form onSubmit={onSave}>
                 <h2>Preencha os dados do colaborador</h2>
-                <TextField label="Nome" placeholder="Digite seu nome" />
-                <TextField label="Cargo" placeholder="Digite seu cargo" />
-                <TextField label="Imagem" placeholder="Endereço da imagem" />
-                <Dropdown label="Time" items={times}/>
+                <TextField required label="Nome" placeholder="Digite seu nome" />
+                <TextField required label="Cargo" placeholder="Digite seu cargo" />
+                <TextField required label="Imagem" placeholder="Endereço da imagem" />
+                <Dropdown required label="Time" items={times}/>
+                <Button>
+                    Criar Card
+                </Button>
             </form>
         </section>
     )
