@@ -4,7 +4,7 @@ import {Dropdown} from "../Dropdown/Dropdown";
 import { Button } from '../Button/Button';
 import {useState} from "react";
 
-export function Form () {
+export function Form (props) {
     const times = [
         'Programação',
         'Front-End',
@@ -22,7 +22,12 @@ export function Form () {
 
     const onSave = (event) => {
         event.preventDefault()
-        console.log(nome, cargo, imagem, time)
+        props.onNewCollaborator({
+            nome,
+            cargo,
+            imagem,
+            time,
+        });
     }
 
     return (
