@@ -4,7 +4,7 @@ export function Dropdown(props) {
     return (
         <div className='lista-suspensa'>
             <label>{props.label}</label>
-            <select required={props.required}>
+            <select onChange={event => props.onChanged(event.target.value)} required={props.required} value={props.value}>
                 {props.items.map(item => {
                     return <option key={item}>{item}</option>
                 })}
