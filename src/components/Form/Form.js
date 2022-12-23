@@ -5,16 +5,6 @@ import { Button } from '../Button/Button';
 import {useState} from "react";
 
 export function Form (props) {
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
@@ -61,7 +51,7 @@ export function Form (props) {
                 <Dropdown
                     required
                     label="Time"
-                    items={times}
+                    items={props.times}
                     value={time}
                     onChanged={value => setTime(value)}
                 />

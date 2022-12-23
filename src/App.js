@@ -49,7 +49,7 @@ function App() {
     return (
         <h1>
             <Banner />
-            <Form onNewCollaborator={collaborator => onAddCollaborator(collaborator)} />
+            <Form times={times.map(time => time.nome)} onNewCollaborator={collaborator => onAddCollaborator(collaborator)} />
 
             {times.map(
                 time => <Time
