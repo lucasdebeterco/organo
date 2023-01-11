@@ -1,14 +1,14 @@
 import './collaborator.css'
 
-export function Collaborator() {
+export function Collaborator({nome, imagem, cargo}) {
     return (
         <div className='collaborator'>
             <div className='header'>
-                <img src='https://github.com/lucasdebeterco.png' alt='Lucas' />
+                <img src={imagem} alt={nome} />
             </div>
             <div className='footer'>
-                <h4>Lucas</h4>
-                <h5>Dev</h5>
+                <h4>{nome}</h4>
+                <h5>{cargo}</h5>
             </div>
         </div>
     )

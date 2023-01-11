@@ -43,7 +43,6 @@ function App() {
         }
     ]
     const onAddCollaborator = (collaborator) => {
-        console.log(collaborator)
         setCollaborators([...collaborators, collaborator])
     }
     return (
@@ -57,6 +56,7 @@ function App() {
                     nome={time.nome}
                     corPrimaria={time.corPrimaria}
                     corSecundaria={time.corSecundaria}
+                    collaborators={collaborators.filter(collaborator => collaborator.time === time.nome)}
                 />
             )}
         </h1>
