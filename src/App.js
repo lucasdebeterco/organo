@@ -2,6 +2,7 @@ import { Banner } from "./components/Banner/Banner";
 import { Form } from "./components/Form/Form";
 import {useState} from "react";
 import {Time} from "./components/Time";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
     const [collaborators, setCollaborators] = useState([]);
@@ -46,7 +47,7 @@ function App() {
         setCollaborators([...collaborators, collaborator])
     }
     return (
-        <h1>
+        <>
             <Banner />
             <Form times={times.map(time => time.nome)} onNewCollaborator={collaborator => onAddCollaborator(collaborator)} />
 
@@ -59,7 +60,9 @@ function App() {
                     collaborators={collaborators.filter(collaborator => collaborator.time === time.nome)}
                 />
             )}
-        </h1>
+
+            <Footer />
+        </>
   );
 }
 
