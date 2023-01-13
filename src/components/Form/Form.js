@@ -27,7 +27,7 @@ export function Form (props) {
     return (
         <section className='form'>
             <form onSubmit={onSave}>
-                <h2>Preencha os dados do colaborador</h2>
+                <h1>Preencha os dados do colaborador</h1>
                 <TextField
                     required
                     label="Nome"

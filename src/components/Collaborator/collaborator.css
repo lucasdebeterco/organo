@@ -13,7 +13,7 @@
     bottom: -50px;
 }
 
-.collaborator .footer {
+.collaborator .collaborator-footer {
     background: #FFFFFF;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
@@ -21,7 +21,7 @@
     padding-bottom: 40px;
 }
 
-.collaborator .footer h4 {
+.collaborator .collaborator-footer h4 {
     color: #6278F7;
     font-size: 18px;
     line-height: 22px;
@@ -29,7 +29,7 @@
     margin-bottom: 8px;
 }
 
-.collaborator .footer h5 {
+.collaborator .collaborator-footer h5 {
     font-size: 18px;
     line-height: 22px;
     color: #212121;

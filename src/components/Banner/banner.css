@@ -4,6 +4,7 @@
     background: #6278f7;
 }
 
-.banner .img {
+.banner img {
     max-width: 100%;
+    height: auto;
 }

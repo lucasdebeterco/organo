@@ -22,7 +22,7 @@ export function Footer() {
                     </li>
                 </ul>
             </section>
-            <section>
+            <section className="bg-image">
                 <img src="/images/logo.png" alt="" />
             </section>
             <section>

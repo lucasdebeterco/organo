@@ -2,14 +2,15 @@ button {
     background: #6278f7;
     border-radius: 10px;
     font-weight: 700;
-    font-size: 18px;
-    padding: 24px 32px;
+    font-size: 14px;
+    padding: 12px 18px;
     border: none;
     cursor: pointer;
     color: #fff;
-    margin: 16px 0;
+    margin-top: 24px;
+    transition: background .2s ease;
 }
 
 button:hover {
-    color: #95ffd4;
+    background: #3c56f3;
 }

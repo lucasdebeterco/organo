@@ -7,7 +7,13 @@ export function Time(props) {
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
             <div className='collaborators'>
                 {props.collaborators.map(
-                    collaborator => <Collaborator nome={collaborator.nome} cargo={collaborator.cargo} imagem={collaborator.imagem} />
+                    collaborator => <Collaborator
+                        key={collaborator.nome}
+                        nome={collaborator.nome}
+                        cargo={collaborator.cargo}
+                        background={props.corPrimaria}
+                        imagem={collaborator.imagem}
+                    />
                 )}
             </div>
         </section>

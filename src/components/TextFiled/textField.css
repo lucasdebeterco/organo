@@ -5,14 +5,22 @@
 .text-field label {
     display: block;
     margin-bottom: 8px;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #404040;
 }
 
 .text-field input {
     width: 100%;
     background: #fff;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.06);
     border: none;
-    font-size: 24px;
-    padding: 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px;
+    outline: 0;
+}
+
+.text-field input::placeholder {
+    font-size: 16px;
 }

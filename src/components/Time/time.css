@@ -5,9 +5,10 @@
 
 .time h3 {
     display: inline-block;
-    font-size: 32px;
     border-bottom: 2px solid;
     padding-bottom: 8px;
+    font-size: 28px;
+    color: #404040;
 }
 
 .time .collaborators {
